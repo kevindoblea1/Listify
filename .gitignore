@@ -1,0 +1,82 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+*.log
+*.tlog
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+*.nuspec
+*.psmdcp
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# MAUI
+**/Platforms/Android/obj/
+**/Platforms/Android/bin/
+**/Platforms/iOS/obj/
+**/Platforms/iOS/bin/
+**/Platforms/MacCatalyst/obj/
+**/Platforms/MacCatalyst/bin/
+**/Platforms/Windows/obj/
+**/Platforms/Windows/bin/
+
+# Xamarin / MAUI cache
+*.apk
+*.ap_
+*.aab
+*.ipa
+*.xcuserstate
+*.xcworkspace
+*.dsym/
+*.app/
+
+# Device-specific debug artifacts
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.db3
+
+# IDEs
+.idea/
+.vscode/
+
+# Files from testing
+TestResults/
+*.TestResults
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+*.vsp
+*.vspx
+*.sap
+*.appxupload
+
+# Misc
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.orig
+*.bak
+*.tmp
+*.swp
+
+# JetBrains Rider
+.idea/
+*.sln.iml
