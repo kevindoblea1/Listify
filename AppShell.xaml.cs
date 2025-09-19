@@ -1,10 +1,12 @@
-﻿namespace Listify
+﻿using Listify.Vistas;
+
+namespace Listify;
+
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
+    public AppShell()
     {
-        public AppShell()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+        Routing.RegisterRoute("EditarArticuloPagina", typeof(EditarArticuloPagina));
     }
 }

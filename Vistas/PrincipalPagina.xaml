@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Listify.Vistas.PrincipalPagina"
+    x:Name="Pagina"
+    Title="Lista de Compras">
+
+    <ContentPage.Content>
+        <StackLayout Padding="10" Spacing="10">
+
+            <SearchBar Placeholder="Buscar..." 
+                       Text="{Binding TextoBusqueda, Mode=TwoWay}"
+                       TextChanged="SearchBar_TextChanged" />
+
+            <CollectionView ItemsSource="{Binding Articulos}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+
+                                    <SwipeItem Text="Editar"
+                                               BackgroundColor="LightBlue"
+                                               Command="{Binding Source={x:Reference Pagina}, Path=BindingContext.EditarArticuloCommand}"
+                                               CommandParameter="{Binding .}" />
+
+                                    <SwipeItem Text="Eliminar"
+                                               BackgroundColor="Tomato"
+                                               Command="{Binding Source={x:Reference Pagina}, Path=BindingContext.EliminarArticuloCommand}"
+                                               CommandParameter="{Binding .}" />
+
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+
+                            <Grid Padding="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <CheckBox IsChecked="{Binding Comprado}"
+                                          VerticalOptions="Center"
+                                          CheckedChanged="CheckBox_CheckedChanged" />
+
+                                <Label Grid.Column="1"
+                                       Text="{Binding Nombre}"
+                                       VerticalOptions="Center"
+                                       TextDecorations="{Binding Comprado, Converter={StaticResource BoolToTextDecorationConverter}}" />
+                            </Grid>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Button Text="+" 
+                    FontSize="24"
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    CornerRadius="30"
+                    HorizontalOptions="End"
+                    VerticalOptions="End"
+                    BackgroundColor="DodgerBlue"
+                    TextColor="White"
+                    Command="{Binding AgregarArticuloCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

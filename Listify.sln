@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36429.23 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listify", "Listify.csproj", "{40C542FB-3894-4C83-B8C3-FEFA7C52ECAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listify", "Listify.csproj", "{DA4FC603-C5D1-4A75-8971-DFE666C24F3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,17 +11,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{40C542FB-3894-4C83-B8C3-FEFA7C52ECAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40C542FB-3894-4C83-B8C3-FEFA7C52ECAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40C542FB-3894-4C83-B8C3-FEFA7C52ECAC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{40C542FB-3894-4C83-B8C3-FEFA7C52ECAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40C542FB-3894-4C83-B8C3-FEFA7C52ECAC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40C542FB-3894-4C83-B8C3-FEFA7C52ECAC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DA4FC603-C5D1-4A75-8971-DFE666C24F3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4FC603-C5D1-4A75-8971-DFE666C24F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4FC603-C5D1-4A75-8971-DFE666C24F3C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DA4FC603-C5D1-4A75-8971-DFE666C24F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4FC603-C5D1-4A75-8971-DFE666C24F3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA4FC603-C5D1-4A75-8971-DFE666C24F3C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {66E5ABCF-A9EC-47A7-B058-F18650E87DDA}
+		SolutionGuid = {FD773C58-9831-43F3-A956-6275DCFA793C}
 	EndGlobalSection
 EndGlobal
